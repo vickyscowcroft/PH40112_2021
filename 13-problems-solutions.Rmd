@@ -1,0 +1,284 @@
+Solutions to problems sheets {#ch:ps-soln .unnumbered}
+===================================
+
+Full solutions are provided for a selection of questions, with hints and numerical answers provided for others where appropriate. Links to the solutions are provided in the corresponding problem sheet section. 
+
+Problems sheet 1 {#sec:ps-soln-1 .unnumbered .unlisted}
+--------------
+
+## Q1. Geometry of the Universe {.unnumbered .unlisted}
+
+The Robertson-Walker metric is defined as
+\begin{equation}
+ds^2 = -c^2 dt^2 + a^2(t) \left[\dfrac{dr^2}{1 - kr^2} + r^2\left(d\theta^2 + \sin^2\theta d\phi^2\right)\right].
+\end{equation}
+
+a) What are the possible values of $k$ and what to they correspond to? 
+
+:::sol
+ * $k=0$: Flat universe.
+ * $k>0$: Positive curvature, closed universe.
+ * $k<0$: Negative curvature, open universe.
+:::
+
+b)  Find the distance, $S$, between the origin ($r=0$) and an object at $r = r_0$ at a fixed time $t_0$ for each of the three values of $k$. 
+
+:::sol
+
+Hint: For this question you only care about $dr$, not about $dt$, $d\theta$ or $d\phi$. Start by setting these to zero.
+:::
+
+## Q2. Evolution of the Universe {.unnumbered .unlisted}
+In this question you will need the Friedman equation:
+
+\begin{equation}
+    \left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{8\pi G}{3}\rho - \dfrac{kc^2}{a^2} 
+\end{equation}
+
+and the Fluid equation:
+
+\begin{equation}
+    \dot{\rho} + 3\dfrac{\dot{a}}{a}\left(\rho + \dfrac{P}{c^2}\right) = 0
+\end{equation}
+
+The equations of state for matter and radiation are:
+
+\begin{align}
+\begin{array}{lr}
+P_{\text{mat}} = 0, & P_{\text{rad}} = \dfrac{\rho c^2}{3}\\
+\end{array}
+\end{align}
+
+Derive expressions for 
+
+a) $\rho(a)$ 
+b) $a(t)$
+c) $\rho(t)$ 
+
+assuming a flat, matter dominated universe and radiation dominated universe.
+
+:::sol
+Derivations for $\rho(a)$, $a(t)$ and $\rho(t)$ are given in the lecture notes. 
+
+For a flat, matter dominated universe:
+\begin{equation}
+\begin{array}{lcr}
+    \rho(a) = \rho_0\left(\dfrac{a_0}{a}\right)^3 & \qquad a(t) = a_0\left(\dfrac{t}{t_0}\right)^{2/3} & \qquad \rho(t) = \rho_0 \left(\dfrac{t_0}{t}\right)^2\\
+\end{array}
+\end{equation}
+
+
+For a flat, radiation dominated universe:
+\begin{equation}
+\begin{array}{lcr}
+    \rho(a) = \rho_0\left(\dfrac{a_0}{a}\right)^4 & \qquad a(t) = a_0\left(\dfrac{t}{t_0}\right)^{1/2} & \qquad \rho(t) = \rho_0 \left(\dfrac{t_0}{t}\right)^2\\
+\end{array}
+\end{equation}
+:::
+
+## Q3. Equations of state {.unnumbered .unlisted}
+We will now assume that the energy density of the Universe is dominated by a fluid with the equation of state
+\begin{equation}
+P = (\gamma - 1)\rho c^2
+\end{equation}
+
+where $\gamma$ is a constant in the range $0 < \gamma < 2$.
+
+Derive expressions for 
+
+a) $\rho(a)$
+b) $a(t)$ 
+c) $\rho(t)$ 
+
+again assuming the Universe is flat. 
+
+:::sol
+
+To find $\rho(a)$ we start by substituting our equation of state into the fluid equation:
+\begin{align*}
+	& \dot{\rho} + 3\dfrac{\dot{a}}{a}\left(\rho + \dfrac{\left(\gamma - 1\right)\rho c^2}{c^2}\right) \\
+	& = \dot{\rho} + 3\gamma\dfrac{\dot{a}}{a}\rho \\
+	& = 0
+\end{align*}
+This is a **separable equation**; we can solve it by rearranging and integrating:
+\begin{align*}
+\dfrac{d\rho}{dt} = \dfrac{-3\rho\gamma}{a}\dfrac{da}{dt}
+\end{align*}
+Using the chain rule:
+\begin{align*}
+\dfrac{d\rho}{dt} = \dfrac{d\rho}{da}\dfrac{da}{dt} 
+\end{align*}
+We end up with something we can integrate to get $\rho(a)$:
+\begin{align*}
+	\dfrac{d\rho}{da} = \dfrac{-3\gamma\rho}{a}
+\end{align*}
+Rearranging and integrating:
+\begin{align*}
+ 	\dfrac{1}{\rho}\dfrac{d\rho}{da} &= \dfrac{-3\gamma}{a} \\
+ \int \dfrac{1}{\rho}\dfrac{d\rho}{da} da &= \int \dfrac{-3\gamma}{a} da \\
+ \ln{\rho(a)} &= -3\gamma\ln{a}
+\end{align*}
+so our solution for $\rho(a)$ is
+\begin{align*}
+\rho(a) &\propto a^{-3\gamma}	\\
+\rho(a) &= \rho_{0}\left(\dfrac{a_0}{a}\right)^{3\gamma}
+\end{align*}
+
+For $a(t)$ we use the Friedman equation, substituting in the expression we found for $\rho(a)$. Rearranging and using the power law substitution demonstrated in Sec. \@ref(sec:matter-eos) we end up with
+\begin{align*}
+a(t) &\propto t^{2/3\gamma} \\
+a(t) &= a_0 \left(\dfrac{t}{t_0}\right)^{2/(3\gamma)}
+\end{align*}
+
+Finally, we can use the expressions we found for $rho(a)$ and $a(t)$ to find $\rho(t)$:
+
+\begin{align*}
+	\rho(t) & = \rho_0\left(\dfrac{t_0}{t}\right)^{2}
+\end{align*}
+
+:::
+
+
+## Q4. Strange fluids {.unnumbered .unlisted}
+
+a) Use your answer from Q3 to show how $\rho(a)$, $a(t)$ and $\rho(t)$ evolve if $\gamma = -1$. 
+
+:::sol
+Using the answers from above we find that $\rho$ is constant, so:
+
+\begin{equation}
+\begin{array}{lcr}
+    \rho(a) = \rho_0 & \qquad \rho(t) = \rho_0 & \qquad a(t) \propto \exp\left[t\right]\\
+\end{array}
+\end{equation}
+
+:::
+
+
+b) What value of $\gamma$ is required for $\rho$ to have the same time dependance as the $k/a^2$ term in the Friedman equation?
+
+:::sol
+Using our definition of $\rho$ from before, and setting it equal to the curvature term, we get
+
+\begin{align*}
+	\rho &= \rho_0\left(\dfrac{a_0}{a}\right)^{3\gamma}\\
+	&= \dfrac{k}{a^2}
+\end{align*}
+Neither $\rho_0$, $a_0$ or $k$ depend on time, so 
+\begin{align*}
+	a^{3\gamma} &= a^2 \\
+	\rightarrow \gamma &= \dfrac{2}{3}
+\end{align*}
+:::
+c) Assuming $k<0$, find the solution $a(t)$ for this type of fluid. 
+
+:::sol
+
+\begin{align*}
+a = a_0 \dfrac{t}{t_0}
+\end{align*}
+:::
+
+Problems sheet 2 {#sec:ps-soln-2 .unnumbered .unlisted}
+--------------
+
+
+## Q1. The Hubble constant and the age of the Universe {.unnumbered .unlisted}
+
+A CMB experiment finds a value of $H_{0} = 66.5$ km s$^{-1}$ Mpc$^{-1}$, with an uncertainty of 1\% and a standard candle experiment finds a value of $H_{0} = 73$ km s$^{-1}$ Mpc$^{-1}$, with an uncertainty of 3\%.
+
+
+a) What is the difference between these measurements, including its uncertainty? Is the difference statistically significant?
+
+:::sol
+\begin{equation}
+\Delta H_0 = 6.5 \pm 2.3 \text{ km s}^{-1} \text{ Mpc}^{-1}
+\end{equation}
+
+Difference is not significant.
+:::
+
+b) What is the age of the Universe in Gyr derived from each experiment? (1 Mpc $= 3.086 \times 10^{22}$ m.) 
+
+:::sol
+Using
+\begin{equation}
+t = \dfrac{1}{H_0}
+\end{equation}
+
+Age 1: 14.7 Gyr, Age 2: 13.4 Gyr
+
+:::
+
+## Q2. More geometry... {.unnumbered .unlisted}
+
+The Robertson-Walker metric is defined as
+\begin{equation}
+ds^2 = -c^2 dt^2 + a^2(t) \left[\dfrac{dr^2}{1 - kr^2} + r^2\left(d\theta^2 + \sin^2\theta d\phi^2\right)\right].
+\end{equation}
+
+What is the maximum possible separation between two objects in 
+
+a) A flat universe?
+b) A closed universe?
+
+:::sol
+For this question we only care about the change in $r$, i.e. $dt$, $d\theta$, $d\phi$ are all zero. 
+
+Think about the maximum distance between two points on a sphere. The furthest away two points can be is half of the circumference of the sphere. How does the circumference change under different curvatures?
+:::
+
+## Q3. Photons {.unnumbered .unlisted}
+
+What is the maximum distance a photon can have travelled in a flat, radiation dominated universe in the time between the big bang and now? Hint: You will need to think back to some of your Y1 special relativity for this one...
+
+:::sol
+
+Start by remembering the definition of light-like separations from special relativity. For a photon, $ds=0$.
+:::
+
+## Q4. Luminosity distances {.unnumbered .unlisted} 
+
+Luminosity distance is the distance an object appears to have, assuming that the inverse-square law holds. It is defined as
+
+\begin{equation}
+    d^2_{\text{lum}} = \dfrac{L}{S}
+\end{equation}
+where 
+
+ * $d_{\text{lum}}$ is the luminosity distance, 
+ * $L$ is the luminosity of the object, i.e the energy emitted per unit solid angle per second, and 
+ * $S$ is radiation flux density, i.e. the energy received per unit area per second. 
+
+Combine these with your answer for Q3 to derive an expression for $d^2_{\text{lum}}$ as a function of $a_0$, $r_0$ and redshift ($z$). 
+
+:::sol
+
+\begin{equation}
+d^2_{\text{lum}} = a_0^2 r_0^2 (1+z)^2
+\end{equation}
+
+:::
+
+
+## Q5. Angular diameter distances {.unnumbered .unlisted} 
+
+The angular diameter distance of an object is the distance that an object of known physical size appears to have, assuming Euclidian geometry. It is defined as
+
+\begin{equation}
+d_{\text{diam}} = \dfrac{l}{\sin\theta} \approx \dfrac{l}{\theta}
+\end{equation}
+
+where $l$ is the physical extent of the object and $\theta$ is its angular size. 
+
+The small angle approximation of $\sin\theta \approx \theta$ is generally appropriate for astronomical objects. 
+
+Find an expression for $d_{\text{diam}}$ in terms of $a_0$, $r_0$ and redshift ($z$). Hint: Remember you're thinking about angles here, so you'll need to consider a different part of the RW metric for this question. 
+
+:::sol
+\begin{equation}
+d_{\text{diam}} = \dfrac{a_0 r_0}{(1+z)}
+\end{equation}
+:::
+
+

@@ -1,0 +1,70 @@
+Guide to qualitative questions {#ch:qual .unnumbered}
+===================================
+
+Many of the learning outcomes for the Cosmology section of PH40112 are designed to test your qualitative understanding of key principles. 
+
+After taking this unit you should be able to: 
+
+A.	describe the key ideas behind cosmology and the expanding universe; 
+B.	describe the observations and techniques used to establish the accelerating expansion of the universe, including systematics and sources of uncertainty; 
+C.	describe the observation and analysis of the Cosmic Microwave Background Radiation, including systematics and sources of uncertainty; 
+D.	describe current state of the art cosmology experiments, how their results compare to each other, and current open questions that they address. 
+
+The course content and exam questions have been designed to align with these learning outcomes. This means that you can expect questions relating to any of the above learning outcomes to appear on an exam. As this is only the second year that this unit has run there is only one past exam paper for you to refer to for examples of exam questions. To help you focus your revision, this document provides examples of the types of qualitative questions you may be asked in final exam.
+
+**DISCLAIMER:** This document provides examples of the types of questions you may be asked. **IT IS NOT A COMPLETE LIST OF ALL QUESTIONS THAT MAY APPEAR.**
+
+Solutions are provided for 1 question in each section so that you can see the style of answers required. The number of marks assigned to an exam question should be a guide for how much you are expected to write. As with the quantitative questions (covered in the previous problem sheet), pay attention to the specific details in the question, e.g. "describe **one** source of uncertainty", "what are **two** possible solutions" etc. As with all units, it is assumed you know the material covered in the course prerequisites from levels 1, 2 and 3.
+
+### A. Describe the key ideas behind cosmology and the expanding universe {#sec:lo-a .unnumbered}
+
+A1. What are the key assumptions of the Cosmological principle?
+
+:::sol
+The Cosmological principle assumes that the Universe is homogeneous and isotropic. This means that, on a large scale, the Universe should be the same at all points, and should look the same in all directions.
+:::
+
+A2. What evidence do we have that the Universe is expanding?
+
+A3. What is inflation? What evidence do we have that the Universe underwent an inflationary period?
+
+A4. What is a "Cosmological model"? Describe the key assumptions and parameters make up the standard cosmological model, $\Lambda$CDM.
+
+
+### B.	Describe the observations and techniques used to establish the accelerating expansion of the universe, including systematics and sources of uncertainty {#sec:lo-b .unnumbered}
+
+B1. What is the "distance ladder"? How is $H_0$ measured using the distance ladder?
+
+:::sol
+The distance ladder uses standard candles – objects of known intrinsic luminosity – to measure the distances to galaxies. The distances of increasingly distant objects are measured, and the relationship between their distances and redshifts is used to derive the Hubble constant. The base of the ladder is calibrated using parallax distances of nearby objects, with each ‘rung’ on the ladder calibrated to the previous one. 
+:::
+
+B2. How do we know that the scale factor of the Universe is currently increasing at an accelerating rate? If the expansion continues at this rate, what is the ultimate fate of the Universe?
+
+B3. What observations were used to show that the expansion rate of the Universe is accelerating? How are cosmological models incorporated into the analysis? Describe one source of uncertainty in this type of experiment.
+
+
+### C. Describe the observation and analysis of the Cosmic Microwave Background Radiation, including systematics and sources of uncertainty {#sec:lo-c .unnumbered}
+
+C1. What are the limitations of using CMB analysis to derive cosmological parameters?
+
+:::sol
+Many Cosmological parameters derived from analyses of the CMB power spectrum are degenerate, meaning that the values derived for one parameter may depend on one or more of the other parameters in the model. CMB analysis is also model dependent, meaning that the results that come out are dependent on the assumptions that went into the model, such as spatial flatness.
+:::
+
+C2. What is the origin of the Cosmic Microwave Background radiation?
+
+C3. How are cosmological parameters derived from the CMB power spectrum? Which cosmological parameters can be constrained by the peaks in the CMB power spectrum?
+
+### D.	Describe current state of the art cosmology experiments, how their results compare to each other, and current open questions that they address. {#sec:lo-d .unnumbered}
+
+D1. What is the "Hubble tension"? Why is it a problem? What are two possible causes of the Hubble tension?
+
+:::sol
+The Hubble tension refers to different values of the Hubble constant measured using standard rulers and standard candles. It is a problem because the experiments should be measuring the same parameter and should get the same result, but as the uncertainty on both types of measurement have reduced in recent years, the difference between the results from Planck and standard candle experiments such as SH$_0$ES has become statistically significant. Two possible causes of the tension are that the uncertainties in either (or both) of the results have been underestimated, or that there is new or missing physics in the standard $\Lambda$CDM model.
+:::
+
+D2. Describe one type of experiment that is used to measure the Hubble constant. How is H0 measured by this experiment? Describe one of the sources of uncertainty in the experiment. How could the total uncertainty from this experiment be reduced?
+
+D3. What are the implications of the Hubble tension remaining? How would a significant Hubble tension affect areas of Physics beyond Cosmology?
+

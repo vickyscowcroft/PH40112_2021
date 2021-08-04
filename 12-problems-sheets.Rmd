@@ -1,0 +1,125 @@
+Problems sheet 1 {#ch:ps-1 .unnumbered}
+===================================
+
+## Q1. Geometry of the Universe {-}
+
+The Robertson-Walker metric is defined as
+\begin{equation}
+ds^2 = -c^2 dt^2 + a^2(t) \left[\dfrac{dr^2}{1 - kr^2} + r^2\left(d\theta^2 + \sin^2\theta d\phi^2\right)\right].
+\end{equation}
+
+a) What are the possible values of $k$ and what to they correspond to? 
+b)  Find the distance, $S$, between the origin ($r=0$) and an object at $r = r_0$ at a fixed time $t_0$ for each of the three values of $k$. 
+
+## Q2. Evolution of the Universe {-}
+In this question you will need the Friedman equation:
+
+\begin{equation}
+    \left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{8\pi G}{3}\rho - \dfrac{kc^2}{a^2} 
+\end{equation}
+
+and the Fluid equation:
+
+\begin{equation}
+    \dot{\rho} + 3\dfrac{\dot{a}}{a}\left(\rho + \dfrac{P}{c^2}\right) = 0
+\end{equation}
+
+The equations of state for matter and radiation are:
+
+\begin{align}
+\begin{array}{lr}
+P_{\text{mat}} = 0, & P_{\text{rad}} = \dfrac{\rho c^2}{3}\\
+\end{array}
+\end{align}
+
+Derive expressions for 
+
+a) $\rho(a)$ 
+b) $a(t)$
+c) $\rho(t)$ 
+
+assuming a flat, matter dominated universe and radiation dominated universe.
+
+## Q3. Equations of state {-}
+We will now assume that the energy density of the Universe is dominated by a fluid with the equation of state
+\begin{equation}
+P = (\gamma - 1)\rho c^2
+\end{equation}
+
+
+
+where $\gamma$ is a constant in the range $0 < \gamma < 2$.
+
+Derive expressions for 
+
+a) $\rho(a)$
+b) $a(t)$ 
+c) $\rho(t)$ 
+
+again assuming the Universe is flat. 
+
+## Q4. Strange fluids {-}
+
+a) Use your answer from Q3 to show how $\rho(a)$, $a(t)$ and $\rho(t)$ evolve if $\gamma = -1$. 
+b) What value of $\gamma$ is required for $\rho$ to have the same time dependance as the $k/a^2$ term in the Friedman equation?
+c) Assuming $k<0$, find the solution $a(t)$ for this type of fluid. 
+
+
+Problems sheet 2 {#ch:ps-2 .unnumbered}
+===================================
+
+## Q1. The Hubble constant and the age of the Universe {-}
+
+A CMB experiment finds a value of $H_{0} = 66.5$ km s$^{-1}$ Mpc$^{-1}$, with an uncertainty of 1\% and a standard candle experiment finds a value of $H_{0} = 73$ km s$^{-1}$ Mpc$^{-1}$, with an uncertainty of 3\%.
+
+
+a) What is the difference between these measurements, including its uncertainty? Is the difference statistically significant?
+b) What is the age of the Universe in Gyr derived from each experiment? (1 Mpc $= 3.086 \times 10^{22}$ m.) 
+
+## Q2. More geometry... {-}
+
+The Robertson-Walker metric is defined as
+\begin{equation}
+ds^2 = -c^2 dt^2 + a^2(t) \left[\dfrac{dr^2}{1 - kr^2} + r^2\left(d\theta^2 + \sin^2\theta d\phi^2\right)\right].
+\end{equation}
+
+What is the maximum possible separation between two objects in 
+
+a) A flat universe?
+b) A closed universe?
+
+## Q3. Photons {-} 
+
+What is the maximum distance a photon can have travelled in a flat, radiation dominated universe in the time between the big bang and now? Hint: You will need to think back to some of your Y1 special relativity for this one...
+
+## Q4. Luminosity distances {-} 
+
+Luminosity distance is the distance an object appears to have, assuming that the inverse-square law holds. It is defined as
+
+\begin{equation}
+    d^2_{\text{lum}} = \dfrac{L}{S}
+\end{equation}
+where 
+
+ * $d_{\text{lum}}$ is the luminosity distance, 
+ * $L$ is the luminosity of the object, i.e the energy emitted per unit solid angle per second, and 
+ * $S$ is radiation flux density, i.e. the energy received per unit area per second. 
+
+Combine these with your answer for Q3 to derive an expression for $d^2_{\text{lum}}$ as a function of $a_0$, $r_0$ and redshift ($z$). 
+
+## Q5. Angular diameter distances {-} 
+
+The angular diameter distance of an object is the distance that an object of known physical size appears to have, assuming Euclidian geometry. It is defined as
+
+\begin{equation}
+d_{\text{diam}} = \dfrac{l}{\sin\theta} \approx \dfrac{l}{\theta}
+\end{equation}
+
+where $l$ is the physical extent of the object and $\theta$ is its angular size. 
+
+The small angle approximation of $\sin\theta \approx \theta$ is generally appropriate for astronomical objects. 
+
+Find an expression for $d_{\text{diam}}$ in terms of $a_0$, $r_0$ and redshift ($z$). Hint: Remember you're thinking about angles here, so you'll need to consider a different part of the RW metric for this question. 
+
+
+

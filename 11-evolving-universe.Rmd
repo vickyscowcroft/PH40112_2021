@@ -1,0 +1,170 @@
+The Evolving Universe {#ch:evolving}
+===================================
+
+In this final section we will be bringing together all the things we've looked at in this section of the course. We'll be looking at the evolutionary time line we started with in Sec. \@ref(sec:history) and shown in Fig. \@ref(fig:evo-uni-2), filling in the gaps with what we've learned. 
+
+```{r echo=FALSE, evo-uni-2, out.width='100%', fig.show='hold', fig.cap='Evolution of the Universe. Original image credit: NASA/WMAP Science Team'}
+knitr::include_graphics("Images/060915_CMB_Timeline150_annotated.jpg")
+```
+
+## In the beginning... {#sec:beginning}
+
+The universe started with the big bang at $t=0$. Following the Planck epoch (around $t=10^{-43}$ s) and the separation of the gravitational and electronuclear forces, then the strong and electroweak separation ($10^{-43} < t < 10^{-36}$ s), we believe that the universe underwent a period of rapid, exponential inflation.
+
+## Inflation {#sec:evo-inflation}
+
+Inflation was the period in the very early universe ($t < 10^{-32}$ s) when the expansion of the universe was accelerating. Using the acceleration equation
+
+\begin{equation}
+    \dfrac{\ddot{a}}{a} = -\dfrac{4\pi G}{3}\left(\rho + \dfrac{3P}{c^2}\right)
+(\#eq:acceleration-evo)
+\end{equation}
+
+and setting $\ddot{a} > 0$, we can see that
+
+\begin{equation}
+    \rho + \dfrac{3P}{c^2} < 0
+(\#eq:acceleration-evo-2)
+\end{equation}
+
+so 
+
+\begin{equation}
+    P < -\dfrac{\rho c^2}{3}
+(\#eq:acceleration-evo-2)
+\end{equation}
+
+This is the equation of state during inflation, and tells us that the inflation field acts like a fluid with negative pressure.
+
+Using this equation of state in the Friedman equation
+
+\begin{equation}
+\left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{8\pi G}{3}\rho - \dfrac{k}{a^2}  + \dfrac{\Lambda}{3}
+(\#eq:friedman-evo)
+\end{equation}
+
+\begin{equation}
+\left(\dfrac{\dot{a}}{a}\right)^2 = \dfrac{\Lambda}{3}
+(\#eq:friedman-evo-2)
+\end{equation}
+
+which leads to 
+
+\begin{equation}
+a(t) \propto \exp\left[\sqrt{\dfrac{\Lambda}{3}}t\right]
+(\#eq:friedman-evo-3)
+\end{equation}
+
+An equation of state with negative pressure leads to exponential expansion!
+
+Inflation is a necessary part of the cosmological model as it solves three problems:
+
+1. The horizon problem - why seemingly disconnected regions of the CMB are observed to have the same temperature
+2. The flatness problem - why $|\Omega_{\text{tot}} -1|$ is so close to 0
+3. Relic particle abundances - why we don't observe particles that should have been created during the big bang.
+
+These three problems can be considered together as the **fine tuning problem**, i.e. the conundrum of why our universe is so close to a flat, critical density universe.
+
+## The first second after the big bang {#sec:after-inf}
+
+After inflation, the universe got on with some particle physics. First we had electroweak symmetry breaking, where the electromagnetic and weak nuclear forces separated. This was closely followed by the quark epoch, when the density of the universe became low enough for quarks to exist. As the universe continued to cool, baryons (things formed of odd numbers of quarks) formed in a period known as baryogenesis. Next came the hadron epoch, when the universe was cool enough for particles to form from 2 or more quarks. This lasted until approximately 1 s after the big bang. During this time the majority of hadrons were annihilated, but some remained floating around in the vast emptiness of space. 
+
+The next major thing was neutrino decoupling around 1 second after the big bang. At this point the universe had reached a density and temperature that allowed neutrinos to freely propagate throughout the universe. These neutrinos should still exist today as the cosmic neutrino background. However, this is yet to be detected observationally.
+
+## After the first second {#sec:after-sec-evo}
+
+Not content with sorting out all the forces, particles etc in the first second of its existence, the universe continued to evolve. Between 1 and 10 seconds after the big bang we had the lepton epoch. Much like the hadron epoch, both leptons and anti-leptons were created, the majority of both being annihilated. Some leptons survived this period and continued to exist (phew!).
+
+Next came the photon epoch, when the universe decided it had done quite a lot already seeing as it had only existed for 10 seconds and decided to have a bit of a rest. At this point the energy density of the universe is dominated by photons, so the expansion evolved according to the radiation equation of state. 
+
+The radiation equation of state is given by
+
+\begin{equation}
+P = \dfrac{\rho c^2}{3}
+(\#eq:rad-eos-evo)
+\end{equation}
+
+and using the Fluid and Friedman equations we looked at in Sec. \@ref(ch:eqs-of-expanding), we can see how the density and scale factor of the universe evolve over time:
+
+\begin{align}
+\begin{array}{lr}
+\rho(a) \propto \dfrac{\rho_0}{a^4} &\qquad a(t) \propto \left(\dfrac{t}{t_0}\right)^{1/2} &\qquad \rho(t) \propto \dfrac{\rho_0 t_0^2}{t^2} \\
+\end{array}
+(\#eq:rad-eos-evo-2)
+\end{align}
+
+The photon epoch carried on until about 377,000 years after the big bang.
+
+For part of this time (2 mins $ < t < $ 20 mins) the universe was also beginning to form the light elements (Hydrogen, Helium, Deuterium and Lithium etc) via nucleosynthesis. 
+
+As the universe continued to expand the energy density of radiation dropped off. At the same time, the energy density of matter was also decreasing, but at a slower rate than that of radiation. We can see this by looking at the matter equation of state and the solutions for $\rho(a), a(t)$, and $\rho(t)$:
+
+
+\begin{align}
+\begin{array}{lr}
+P = 0 \\
+\rho(a) \propto \dfrac{\rho_0}{a^3} &\qquad a(t) \propto \left(\dfrac{t}{t_0}\right)^{2/3} &\qquad \rho(t) \propto \dfrac{\rho_0 t_0^2}{t^2} \\
+\end{array}
+(\#eq:mat-eos-evo-3)
+\end{align}
+
+At approximately 47,000 years after the big bang, the energy densities of matter and radiation were approximately equal, with matter becoming more important to the evolution of the expansion as time went on.
+
+## Epoch of recombination {#sec:recomb-evo}
+
+The epoch of recombination is one of the most significant stages in the evolution of the universe. Recombination marks the end of the photon epoch (377,000 years after the big bang) as the universe has cooled sufficiently for neutral atoms to form. As photons were no longer bouncing around everywhere, scattering off free protons and electrons, their path length increased and they were free to move through the universe. These photons are seen today as the cosmic microwave background radiation. 
+
+As we saw in Sec \@ref(ch:obs-techs-cmb), the size of the fluctuations in the CMB power spectrum can tell us a lot about the universe's evolution and composition. The relative heights and positions of the different peaks provide information about things like the amount of baryons, dark matter and curvature. 
+
+## Structure formation {#sec:struct-evo}
+
+Following the epoch of recombination, things were a little dull for a while. Between approximately 380,000 years and 1 Gyr after the big bang was the period known as the "dark ages". With no stars to produce radiation yet, there wasn't much going on. 
+
+Approximately 150 Myr after the big bang, things started to get going again. Structures in the universe formed hierarchically, with population III stars forming first (around $t=700$ Myr), then clustering together first into dwarf galaxies, then bigger and bigger galaxies. 
+
+This led to the **epoch of reionisation**, kicking off around 250 Myr after the big bang. Once the first stars started to form, they released radiation into the universe which could ionise the neutral Hydrogen that was hanging around. This produced, once again, a plasma of protons and electrons. At approximately 1 Gyr after the big bang, the expansion caused this plasma to cool enough that neutral hydrogen could form once more. 
+
+Around 1 Gyr after the big bang, we started to get larger and larger structures. Gravitational attraction caused the matter to move into bigger galaxies, and eventually galaxy clusters. These are the galaxies and clusters we see today, with population II stars forming first, followed by population I stars. Population II stars are the earliest stars we can observe, and typically have low metallicities. Population I stars (the most recent to form) have higher metallicities as they were formed from an interstellar medium that had been enriched with heavier elements from the death of the population I stars. 
+
+## Dark energy epoch {#sec:de-epoch}
+
+Now we have all the fundamental forces, particles, photons, stars and galaxies, we arrive at where our universe is today. Measurements of the expansion rate have shown that the universe continues to expand. However, they also show that this expansion is accelerating! Similar to the exponential expansion we saw during inflation, something is driving the expansion rate to keep increasing. We refer to this "something" as **dark energy**. Observational experiments, combined with cosmological models, have shown that the majority of the universe's energy density must be attributed to dark energy in order to explain our observations. The most recent results from *Planck* estimate the dark energy contribution to be around 68% (see Sec. \@ref(sec:composition-evidence) for a summary of these results). Similar to the negative pressure equation of state during inflation, we believe that the equation of state for dark energy must take the form
+
+\begin{equation}
+P = w \rho c^2
+(\#eq:de-eos-evo)
+\end{equation}
+
+with $w$ known as the dark energy equation of state parameter, often assumed to be $-1$. 
+
+## Our understanding of the universe {#sec:summary-lcdm}
+
+Our understanding of the universe can be summarised by the $\Lambda$CDM model - the standard model of cosmology. It tells us that:
+
+* The universe is expanding
+* It has a flat geometry ($k=0$)
+* Approximately 5% of the universe's energy density is due to baryons, and 0.004% is due to radiation. 
+* Approximately 27% of the energy density is due to non-relativistic dark matter, and the remaining 68% is due to dark energy.
+
+However, we still are left with several open questions:
+
+* What is dark matter?
+* What is dark energy?
+* What is the reason for the Hubble tension?
+* Does $\Lambda$CDM include all the correct physics? Do we need to extend it?
+
+While we cannot answer these questions right now, I hope that one of you will be able to answer them at some point in my lifetime.
+
+The end. 
+
+
+
+
+
+
+
+
+
+
+
+
